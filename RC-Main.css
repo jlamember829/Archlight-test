@@ -189,14 +189,14 @@ footer dl {
 
 .parallax_image_first{
 	background-color: black;
-	background-image: url("assets/shield-bg.jpg");
+	background-image: url("assets/Shield-BG.jpg");
 	background-size: cover;
 	background-position: center;
 }
 .parallax_image_second {
 	
 	background-color: black;
-	background-image: url("assets/Walter-bg.jpg");
+	background-image: url("assets/Walter-BG.jpg");
 	background-size: cover;
 	background-position: center;
 
