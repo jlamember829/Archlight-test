@@ -87,6 +87,61 @@ article {
 	font-weight: bold;
 	font-size:25px;
 }
+table {
+  width: 900px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 2px 2px black;
+  color: gold;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 120px;
+}
+colgroup {
+  width: 900px;
+}
+col {
+  width: 300px;
+}
+th {
+	font-size: 48px;
+	color: gold;
+	font-weight: bold;
+}
+td {
+	color: gold;
+	font-weight: bold;
+	font-size:25px;	
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.title {
+	font-size: 30px;
+	text-decoration: underline;
+}
+.name {
+	padding-bottom: 20px;
+}
+.donations {
+	width: 800px;
+	padding-top: 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-shadow: 2px 2px black;
+	color: gold;
+	font-weight: bold;
+	font-size:25px;
+	line-height: 35px;
+}
+.thanks {
+	font-size: 35px;
+}
+.donors {
+	text-align: center;
+}
+
 
 
 /* Video Section */
@@ -99,78 +154,84 @@ article {
 }
 
 /* Projects */
-
-ul {
-    width: 1000px;
-	list-style-type: none;
-	white-space: nowrap;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	;
-}
-li {
-	font-size: 18px;
-	display: inline-block;
-	padding-left: 11px;
-}
-li img{
+.hero_section {
+	width: 900px;
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 15px;
+	padding: 50px;
 }
-li figcaption {
-	 text-align: center;
- }
-li a:link {
+.hero_section img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hero_section img a:link {
 	text-decoration: none;
 }
-li a:visited {
+.hero_section img a:visited {
 	color: gold;
 	text-decoration: none;
 }
-li img {
+.hero_section img {
 	border: 2px solid gold;
 	border-radius: 8px;
 	transition: width 2s, height 2s;
 	-webkit-transition: width 2s, height 2s;
 }
-li img:hover {
+.hero_section img:hover {
 	width: 248px;
 }
 
 /* footer*/
-footer{
-	/*border-top: 5px solid gold;*/
-	clear: both;
-	height: 475px;
-	background-color: white;
-	background-image:url("assets/archlight-website bottom-image.jpg");
-	background-size: cover;
-	border-top: 5px solid;
-	border-image: linear-gradient(to right, rgba(0, 0, 0, 0), gold) 1;
+footer {
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	margin-bottom: auto;
+	margin-top: 0px;
+	position: relative;
+}.nav1 {
+	position: absolute;
+	color: white;
+	right: 350px;
+	bottom: 10em;
+}
+.nav1 a {
+	color: white;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 18px;
+	line-height: 48px;
+	text-decoration: none;
+	font-weight: bold;
 }
 
-footer dl {
-	vertical-align: bottom;
-	padding-top: 10%;
-	padding-bottom: auto;
-	padding-right: 100px;
-	display: block;
-	float: right;
+.nav2 {
+	position: absolute;
+	color: white;
+	right: 225px;
+	bottom: 10em;
+}
+.nav2 a {
+	color: white;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	font-size: 18px;
+	line-height: 48px;
+	text-decoration: none;
 	font-weight: bold;
-	text-shadow: 2px 2px black;
-	color: gold;
 }
-.logos {
-	float: right;
-	margin-right: 50px;
-	margin-top: 395px;
-	display: inline-block;
-	
+.nav3 {
+	margin-right: 10px;
+	position: absolute;
+	color: rgba(250,212,4,1.00);
+	right: 225px;
+	bottom: 3em;
 }
-.logos img {
-	padding-right: 25px;
+.nav1 a:hover {
+	color: white;
+}
+.nav2 a:hover {
+	color: white;
 }
 
 /* Parralax Info */
@@ -180,10 +241,10 @@ footer dl {
 	border-radius:25px;
 	border-image: linear-gradient(to right, black, red) 1;
 	height: 800px;
-  	background-repeat: no-repeat;
-  	background-attachment: fixed;
-  	background-size: cover;
-  	background-position: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 100% auto;
 	position:relative;
 }
 
@@ -208,14 +269,26 @@ footer dl {
 	background-position: center;
 
 }
+@media only screen and (max-width: 1024px) {
+  .parallax_section {
+		height:800px;
+    width: 100%;
 
+	}
+  .center {
+    width: 800px;
+  }
+  footer {
+    display: none; 
+  }
+}
 @media (max-width: 768px) {
 	li img{
 		overflow: auto;
 	}
 	.parallax_section {
-		height:600px;
-		width: 1020px;
+		height:800px;
+		width: 768px;
 	}
 	.parallax_image_first {
 		background-size: cover;
@@ -227,6 +300,7 @@ footer dl {
 		background-size:cover;
 	}
 	footer {
-		background-size: cover;
+		background-size: none;
+    display: none;
 	}
 }

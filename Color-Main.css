@@ -81,8 +81,8 @@ iframe {
 }
 .center {
 	width: 1000px;
-    margin-left:auto; 
-    margin-right:auto;
+  margin-left:auto; 
+  margin-right:auto;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	position: bottom;
@@ -134,38 +134,63 @@ li img:hover {
 }
 
 /* footer*/
-footer{
-	/*border-top: 5px solid gold;*/
-	clear: both;
-	height: 475px;
-	background-color: white;
-	background-image:url("assets/archlight-website bottom-image.jpg");
-	background-size: cover;
-	border-top: 5px solid;
-	border-image: linear-gradient(to right, rgba(0, 0, 0, 0), gold) 1;
+footer {
+	bottom: 0;
+	left: 0;
+	margin-bottom: auto;
+	margin-top: 0px;
+	position: relative;
+}.nav1 {
+	position: absolute;
+	color: white;
+	right: 350px;
+	bottom: 10em;
+}
+.nav1 a {
+	color: white;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 18px;
+	line-height: 48px;
+	text-decoration: none;
+	font-weight: bold;
 }
 
-footer dl {
-	vertical-align: bottom;
-	padding-top: 10%;
-	padding-bottom: auto;
-	padding-right: 100px;
-	display: block;
-	float: right;
+.nav2 {
+	position: absolute;
+	color: white;
+	right: 225px;
+	bottom: 10em;
+}
+.nav2 a {
+	color: white;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	font-size: 18px;
+	line-height: 48px;
+	text-decoration: none;
 	font-weight: bold;
-	text-shadow: 2px 2px black;
-	color: gold;
+}
+.nav3 {
+	margin-right: 10px;
+	position: absolute;
+	color: rgba(250,212,4,1.00);
+	right: 225px;
+	bottom: 3em;
+}
+.nav1 a:hover {
+	color: white;
+}
+.nav2 a:hover {
+	color: white;
 }
 .logos {
-	float: right;
-	margin-right: 50px;
-	margin-top: 395px;
-	display: inline-block;
-	
+    float: right;
+    margin-right: 50px;
+    margin-top: 395px;
+    display: inline-block;
+
 }
 .logos img {
-	padding-right: 25px;
+    padding-right: 25px;
 }
 
 /* Parralax Sinfo */
@@ -197,10 +222,12 @@ footer dl {
 
 }
 .parallax_image_third {
-	background-color: black;
-	background-image:url("assets/color-me-painting-2.jpg");
-	background-size: cover;
-	background-position: center;
+  background-color: black;
+  background-image: url("assets/color-me-painting-2.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
