@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+nav {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	background: #FFFFFF;
+	width: 100%;
+}
+.navbar {
+    float: right;
+    text-align: right;
+    padding-right: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 2;
+    right: 0;
+}
+a {
+    text-decoration: none;
+    color: blue;
+    text-align: left;
+    
+}
+
+.logo {
+    float: left;
+    clear: left;
+	left: 0;
+	
+}
+.center {
+	display: block;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: auto;
+    padding-right: auto;
+    left: auto;
+    right: auto;
+}
+.blurb {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size:24px;
+	
+}
+.static .navbar a {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+.email {
+	font-size: 36px;
+}
+
+/* Parralax Sinfo */
+.parallax_section{
+	height: 400px;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	background-position: 100% auto;
+	position:relative;
+}
+.main_logo {
+    padding-top: 19px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.parallax_top{
+	height: 25px;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	background-position: 100% auto;
+	position:relative;
+}
+.parallax_image_first{
+	border-top: 5px solid white;
+	 background-image: url("assets/archlight website clean.jpg");
+}
+
+@media screen{
+.static .navbar a {
+}
+
+}
+
+

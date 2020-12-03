@@ -1,0 +1,112 @@
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  background-image: linear-gradient(to right, white, gold);
+  z-index: 30;
+}
+/* Navbar links */
+#navbar a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+/* this is added with JS. Makes Navbar stay on top. */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+ /*Navbar buttons*/
+.button {
+    color: navy;
+    font-weight: bold;
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+.button:hover {
+    background-color: red;
+    color: white;
+	
+}
+
+
+body {
+    background: white;
+    background-image: url("assets/starry-sky-2521222_1280-2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    font-family: sans-serif;
+}
+.content_block {
+    padding-top: 25px;
+    font-size: 1.2em;
+    text-align: center;
+}
+h1 {
+    font-size: 3em;
+    color: black;
+    -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: gold;
+    font-weight: bold;
+    font-family: 'Sarpanch', sans-serif;
+}
+.bios {
+    text-align: left;
+    width: 1000px;
+    margin-left:auto; 
+    margin-right:auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-shadow: 2px 2px black;
+    color: gold;
+    font-weight: bold;
+    font-size:25px;
+    clear: both;
+}
+article img {
+    float: left;
+    margin-right: 10px;
+    border: 2px solid gold;
+    border-radius: 35px;
+}
+
+/* footer*/
+footer{
+    /*border-top: 5px solid gold;*/
+    clear: both;
+    height: 475px;
+    background-color: white;
+    background-image:url("assets/archlight-website bottom-image.jpg");
+    background-size: cover;
+    border-top: 5px solid;
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0), gold) 1;
+}
+footer dl {
+    vertical-align: bottom;
+    padding-top: 10%;
+    padding-bottom: auto;
+    padding-right: 100px;
+    display: block;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+    color: gold;
+}
+footer a:visited {
+    color: goldenrod;
+}
+.logos {
+    float: right;
+    margin-right: 50px;
+    margin-top: 395px;
+    display: inline-block;
+
+}
+.logos img {
+    padding-right: 25px;
+}
